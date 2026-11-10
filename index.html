@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fork the Recipe</title>
+<meta name="description" content="A five-star cookie recipe marked up like a code review, with every change tagged by where it came from. No ratings. Fork it and make your own.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <p class="crumb">thea-ishida / <strong>cookies</strong></p>
+    <h1>Fork the Recipe</h1>
+    <p class="pr-line"><span class="badge open">Open</span> <strong>thea-ishida</strong> wants to merge <span id="change-count"></span> changes into <code>five-star.recipe</code></p>
+    <!-- STAND-IN TEXT drafted by Claude from Thea's answers. Thea: rewrite in your own words. -->
+    <p class="lede">Alice Waters wants cooks inspired by recipes, not ruled by them. This is the 4.99-star cookie recipe I baked from, reviewed like code. Every change says where it came from and what it cost in time. There are no stars on this page.</p>
+  </div>
+</header>
+
+<nav class="tabs wrap" role="tablist">
+  <button role="tab" aria-selected="true" data-tab="diff">Files changed</button>
+  <button role="tab" aria-selected="false" data-tab="time">Time</button>
+  <button role="tab" aria-selected="false" data-tab="fork">Fork it</button>
+</nav>
+
+<main class="wrap">
+  <section id="tab-diff" class="panel">
+    <div class="legend" aria-label="Filter changes by source">
+      <span class="legend-label">Show changes from:</span>
+      <div id="filters"></div>
+    </div>
+    <div class="file" id="file-cookies"></div>
+    <div class="file" id="file-principles"></div>
+  </section>
+
+  <section id="tab-time" class="panel" hidden>
+    <h2>Time is part of the recipe</h2>
+    <!-- STAND-IN TEXT drafted by Claude from Thea's answers. Thea: rewrite in your own words. -->
+    <p class="muted">Waters says the "proper price" of food is more than money (Waters 7). Time is part of what I paid. My bake took an hour, twice the recipe card's 30 minutes but half the reel's two hours. Skipping the reel's full version was a fast food choice, and I'm keeping it visible.</p>
+    <div id="time-bars" class="bars"></div>
+  </section>
+
+  <section id="tab-fork" class="panel" hidden>
+    <h2>Fork it</h2>
+    <p class="muted">Start from any file, change any line, and say where each change came from and what you traded for it. Nothing is scored. Your fork lives in the link.</p>
+    <div class="fork-controls">
+      <label for="fork-base">Start from</label>
+      <select id="fork-base">
+        <option value="original">five-star.recipe</option>
+        <option value="thea">theas-cookies.recipe</option>
+        <option value="principles">waters-principles.md</option>
+      </select>
+    </div>
+    <label class="sr" for="fork-text">Your version, one line per ingredient or step</label>
+    <textarea id="fork-text" spellcheck="false" rows="14"></textarea>
+    <h3>Your changes</h3>
+    <div id="fork-tags"></div>
+    <div class="file" id="fork-diff"></div>
+    <div class="fork-actions">
+      <button id="fork-save" class="primary">Save fork to link</button>
+      <button id="fork-reset">Start over</button>
+      <span id="fork-status" role="status" class="muted"></span>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <h2>Sources</h2>
+  <ul>
+    <li>Sandford, Laura. "The Best Chocolate Chip Cookie Recipe Ever." <em>JoyFoodSunshine</em>. The original recipe.</li>
+    <li>Waters, Alice. "Introduction." <em>The Art of Simple Food</em>, Clarkson Potter, 2007, pp. 3-7. The nine principles.</li>
+    <li>Mangan, Arty. "Changing the Way We Eat: Alice Waters' Delicious Revolution." <em>Bioneers</em>, 4 May 2023.</li>
+  </ul>
+  <p class="muted">Made by Thea Ishida for DIGIHUM 2120, Creative Sprint 9. Code written with help from Claude (Anthropic). No outside libraries, fonts or images.</p>
+</footer>
+
+<script src="recipe.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
