@@ -35,4 +35,4 @@ Open `index.html` in a browser. No build step or dependencies.
 - Original recipe: Laura Sandford, "The Best Chocolate Chip Cookie Recipe Ever," JoyFoodSunshine.
 - Principles: Alice Waters, *The Art of Simple Food*, Clarkson Potter, 2007, pp. 6-7.
 - No outside images, fonts or libraries.
-- Code written with assistance from Claude (Anthropic). Text marked STAND-IN in `index.html` and the notes in `recipe.js` were drafted from my answers and are being rewritten in my own words.
+- Code written with assistance from Claude (Anthropic). The intro, the Time paragraph and the change comments were drafted by Claude in my voice from my own answers about how I made the cookies.

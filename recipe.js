@@ -36,6 +36,7 @@ window.RECIPE = {
   },
 
   // Thea's version. A line with a `note` gets a review comment under it.
+  // Comment text drafted by Claude in Thea's voice from her answers.
   // A line with only `src` is coloured by source but has no comment.
   // source: reel | hands | taste | twist      pace: fast | slow | (leave out)
   thea: {
@@ -44,20 +45,20 @@ window.RECIPE = {
       "# Ingredients",
       { text: "1 cup salted butter, browned",
         note: { source: "reel", pace: "fast",
-          why: "Saw brown butter cookies in an Instagram reel. I took the browned butter but skipped the reel's two-hour recipe." } },
+          why: "Got this from an Instagram reel. Their recipe took two hours and I didn't want to wait that long, so I just took the brown butter." } },
       "1 cup granulated sugar",
       "1 cup light brown sugar, packed",
       "2 tsp pure vanilla extract",
       "2 large eggs",
       { text: "a little less than 3 cups all-purpose flour",
         note: { source: "hands", pace: "slow",
-          why: "The dough was too hard to mix the chocolate into, so I cut the flour." } },
+          why: "The dough was really hard to mix, especially folding in the chocolate, so I cut back on the flour." } },
       "1 tsp baking soda",
       "1/2 tsp baking powder",
       "1 tsp sea salt",
       { text: "1 Cadbury dark chocolate bar, broken into bits",
         note: { source: "taste",
-          why: "I wanted higher-end chocolate than store-bought baking chips." } },
+          why: "I wanted nicer chocolate than store-bought baking chips, so I broke up a Cadbury dark chocolate bar." } },
       { text: "caramel, for drizzling", src: "twist" },
       { text: "Himalayan pink salt, for sprinkling", src: "twist" },
       "# Method",
@@ -71,7 +72,7 @@ window.RECIPE = {
       "Cool on the pan for 5 minutes.",
       { text: "Drizzle caramel over the cookies and sprinkle with pink salt.",
         note: { source: "twist",
-          why: "Added after baking. My own idea, not from either recipe." } }
+          why: "My own idea. I added these on top after the cookies came out of the oven." } }
     ]
   },
 
